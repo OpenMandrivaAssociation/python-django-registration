@@ -2,7 +2,7 @@
 
 Name:           python-django-registration
 Version:        0.7
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        A user-registration application for Django
 
 Group:          Development/Python
