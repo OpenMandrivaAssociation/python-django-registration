@@ -37,3 +37,16 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc AUTHORS.txt CHANGELOG.txt LICENSE.txt README.txt docs/
 %{py_puresitedir}/*
+
+
+%changelog
+* Tue Nov 02 2010 Ahmad Samir <ahmadsamir@mandriva.org> 0.7-3mdv2011.0
++ Revision: 592246
+- rebuild for python 2.7
+
+* Fri Feb 12 2010 Jérôme Brenier <incubusss@mandriva.org> 0.7-2mdv2010.1
++ Revision: 505132
+- fix summary
+- import python-django-registration
+
+
