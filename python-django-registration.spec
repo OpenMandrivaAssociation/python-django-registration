@@ -2,7 +2,7 @@
 
 Name:           python-django-registration
 Version:        1.0
-Release:        1
+Release:        2
 Summary:        A user-registration application for Django
 
 Group:          Development/Python
