@@ -1,14 +1,14 @@
 %define realname django-registration
 
 Name:           python-django-registration
-Version:        1.0
-Release:        2
+Version:	3.0.1
+Release:	1
 Summary:        A user-registration application for Django
 
 Group:          Development/Python
 License:        BSD
 URL:            http://bitbucket.org/ubernostrum/django-registration
-Source0:        https://pypi.python.org/packages/source/d/django-registration/django-registration-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/21/af/e24c34910a04b9cc5eee5238334d03df4fff10df892831f49bc309c1e636/django-registration-3.0.1.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python-devel
