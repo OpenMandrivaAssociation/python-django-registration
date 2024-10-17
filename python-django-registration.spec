@@ -7,7 +7,7 @@ Summary:        A user-registration application for Django
 
 Group:          Development/Python
 License:        BSD
-URL:            http://bitbucket.org/ubernostrum/django-registration
+URL:            https://bitbucket.org/ubernostrum/django-registration
 Source0:	https://files.pythonhosted.org/packages/21/af/e24c34910a04b9cc5eee5238334d03df4fff10df892831f49bc309c1e636/django-registration-3.0.1.tar.gz
 
 BuildArch:      noarch
