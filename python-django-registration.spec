@@ -1,37 +1,32 @@
-%define realname django-registration
+%define module django-registration
+%define oname django_registration
 
-Name:           python-django-registration
-Version:	3.0.1
+Name:		python-django-registration
+Version:	5.2.1
 Release:	1
-Summary:        A user-registration application for Django
+Summary:	A user-registration application for Django
+Group:		Development/Python
+License:	BSD
+URL:		https://github.com/ubernostrum/django-registration
+Source0:	%{URL}/archive/%{version}/%{name}-%{version}.tar.gz
 
-Group:          Development/Python
-License:        BSD
-URL:            https://bitbucket.org/ubernostrum/django-registration
-Source0:	https://files.pythonhosted.org/packages/21/af/e24c34910a04b9cc5eee5238334d03df4fff10df892831f49bc309c1e636/django-registration-3.0.1.tar.gz
-
-BuildArch:      noarch
-BuildRequires:	make
-BuildRequires:  python-devel
-BuildRequires:	python-setuptools
-Requires:       python-django
+BuildSystem:	python
+BuildArch:	noarch
+BuildRequires:	pkgconfig(python3)
+BuildRequires:	python%{pyver}dist(confusable-homoglyphs)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(pdm-backend)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
+BuildRequires:	python%{pyver}dist(django)
+Requires:       python%{pyver}dist(django) >= 4.2
 
 %description
 This is a fairly simple user-registration application for Django_, designed to
 make allowing user signups as painless as possible.
 
-%prep
-%setup -q -n %{realname}-%{version}
-
-%build
-%{__python} setup.py build
-
-%install
-%{__python} setup.py install -O1 --skip-build --root %{buildroot}
-
-%clean
-
 %files
-%doc docs/
-%{py_puresitedir}/*
-
+%doc README.rst
+%license LICENSE
+%{py_puresitedir}/%{oname}
+%{py_puresitedir}/%{oname}-%{version}.dist-info
